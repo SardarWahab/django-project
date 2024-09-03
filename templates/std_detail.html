@@ -14,21 +14,15 @@
 
   <body>
     <h1>Student Managemnet System!</h1>
-    {% for astd in all_std %}
     <div class="container">
-      <div class="row">
-        <div class="card col-4 my-3 border border-1" >
-          <div class="card-body">
-            <h2 class="card-title">The student name is {{astd.Name}}</h2>
-            <p class="card-text">student Roll no is {{astd.Roll_No }}</p>
-            {% comment %} <p class="card-text">student department is {{ astd.Department }}</p>
-            <p class="card-text">stdent session is {{astd.session}}</p> {% endcomment %}
-            <a href="/student/{{astd.Roll_No}} ">Read more</a>
-          </div>
-        </div>
-      </div>
+    <h1>Student name: {{student.Name}}</h1>
+    <h3>Student Roll no: {{student.Roll_No}}</h3>
+    <p>Student  department: {{student.Department}}</p>
+    <p>Student  Session: {{student.session}} </p>
+    
+    <a class='btn btn-primary' href"/">Go Back</a>
     </div>
-    {% endfor %}
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
